@@ -7,13 +7,6 @@
     <script src="Build/UnityLoader.js"></script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Buildt_Test_3.json");
-      window.addEventListener("resize", OnResize);
-      function OnResize()
-      {
-        gameInstance.SendMessage("ReSizeScreenScript", "SetWidth", window.innerWidth);
-        gameInstance.SendMessage("ReSizeScreenScript", "SetHeight", window.innerHeight);
-        gameInstance.SendMessage("ReSizeScreenScript", "OnResize");
-      }
 
     </script>
   </head>
